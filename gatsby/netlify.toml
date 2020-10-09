@@ -1,2 +1,10 @@
 [build]
     functions = "/functions"
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+	cache-control = '''
+	public,
+    max-age=14400,
+	must-revalidate'''
